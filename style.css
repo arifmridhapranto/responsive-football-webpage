@@ -41,12 +41,17 @@ a {
   text-decoration: none;
   color: white;
 }
-.manu-button a {
+.manu-button {
   font-size: 16px;
   font-weight: 500;
   background-color: #e02c6d;
   color: white;
   padding: 10px 24px;
+}
+.manu-button:hover {
+  background: black;
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease-in;
 }
 .fa-arrow-right {
   margin-right: 8px;
@@ -90,8 +95,14 @@ a {
   display: inline-block;
   margin-top: 30px;
 }
+
 .watch-now-button .fa-arrow-right {
   padding-left: 10px;
+}
+.watch-now-button:hover {
+  background: black;
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
 }
 /* header banner styles end */
 
@@ -166,7 +177,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 50px;
 }
 .left-side-image img {
   width: 350px;
@@ -217,5 +227,84 @@ footer {
 }
 /* footer section styles end */
 /* mobile responsive  code start  */
-
+@media only screen and (max-width: 360px) {
+  header {
+    width: 100%;
+    height: 695px;
+    padding-left: 20px;
+    background-color: #2d25a0;
+  }
+  .manu {
+    display: none;
+  }
+  .header-banner {
+    width: 360px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main-text {
+    width: 50%;
+  }
+  .main-text h1 {
+    font-size: 36px;
+  }
+  .right-side img {
+    width: 330px;
+    height: 260px;
+    padding-top: 50px;
+  }
+  .container {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 15px;
+  }
+  .player img {
+    width: 300px;
+    height: 256px;
+  }
+  .highlight-section {
+    flex-direction: column;
+  }
+  .highlight-texts {
+    padding-top: 0px;
+    width: 330px;
+    height: 300px;
+  }
+  .highlight-texts h1 {
+    font-size: 30px;
+  }
+  .highlight-image img {
+    margin-top: 50px;
+    width: 328px;
+    height: 248px;
+  }
+  .section-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .final-match-section {
+    display: grid;
+    grid-template-rows: 1fr 200px;
+    margin-left: 15px;
+  }
+  .left-side-image img {
+    width: 325px;
+    height: 240px;
+  }
+  .middle-text h1 {
+    margin-top: 50%;
+  }
+  .right-side-image img {
+    width: 325px;
+    height: 240px;
+  }
+  footer {
+    background-color: white;
+  }
+  .footer-image img {
+    width: 320px;
+  }
+}
 /* mobile responsive code end  */
