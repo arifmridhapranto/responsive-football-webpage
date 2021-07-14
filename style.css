@@ -227,7 +227,7 @@ footer {
 }
 /* footer section styles end */
 /* mobile responsive  code start  */
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 375px) {
   header {
     width: 100%;
     height: 695px;
@@ -238,7 +238,7 @@ footer {
     display: none;
   }
   .header-banner {
-    width: 360px;
+    width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
   .main-text {
@@ -307,4 +307,7 @@ footer {
     width: 320px;
   }
 }
+/* mobile responsive code end  */
+/* tablets responsive code start  */
+
 /* mobile responsive code end  */
